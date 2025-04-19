@@ -1,5 +1,5 @@
 <?php
-function callApiWithToken($url) {
+function callApi($url) {
     $curl = curl_init();
 
     curl_setopt_array($curl, [
@@ -23,7 +23,7 @@ function callApiWithToken($url) {
 }
 
 $endpoint1 = "https://ciisa.coningenio.cl/v1/services/";
-$response1 = callApiWithToken($endpoint1);
+$response1 = callApi($endpoint1);
 
 $endpoint2 = "https://ciisa.coningenio.cl/v1/about-us/";
-$response2 = callApiWithToken($endpoint2);
+$response2 = callApi($endpoint2);
